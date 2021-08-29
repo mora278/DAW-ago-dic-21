@@ -1,8 +1,8 @@
 var valueX;
 var valueY;
-var result;
+var json;
 
-function calcularArea() {
+function getResults() {
   var elementX = document.getElementById("valueX");
   var elementY = document.getElementById("valueY");
   var stringToPrint = "";
@@ -14,9 +14,9 @@ function calcularArea() {
   console.log(valueX);
   console.log(valueY);
 
-  result = valueX * valueY;
+  var result = valueX * valueY;
 
-  var areaElement = document.getElementById("result");
+  var textArea = document.getElementById("result");
   operations.forEach(function(element, index, array) {
     switch(element) {
       case "sum":
@@ -49,5 +49,5 @@ function calcularArea() {
         break;
     }
   });
-  areaElement.innerHTML = stringToPrint;
+  textArea.innerHTML = stringToPrint;
 }
