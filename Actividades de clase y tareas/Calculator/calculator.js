@@ -15,6 +15,7 @@ function getResults() {
   console.log(valueY);
 
   var result = valueX * valueY;
+  json
 
   var textArea = document.getElementById("result");
   operations.forEach(function(element, index, array) {
